@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import colors from "../utils/colors"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -11,9 +12,10 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.5),
+          ...scale(1.2),
           marginBottom: rhythm(1.5),
           marginTop: 0,
+          color: colors.primaryRed,
         }}
       >
         <Link
@@ -34,6 +36,7 @@ const Layout = ({ location, title, children }) => {
         style={{
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
+          color: colors.primaryRed,
         }}
       >
         <Link
@@ -60,11 +63,7 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <footer>© {new Date().getFullYear()}</footer>
     </div>
   )
 }

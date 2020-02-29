@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import colors from "../utils/colors"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -24,7 +25,10 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link
+                  style={{ boxShadow: `none`, color: colors.primaryRed }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
