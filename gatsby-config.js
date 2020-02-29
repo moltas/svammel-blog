@@ -3,7 +3,7 @@ module.exports = {
     title: `Svammel`,
     author: {
       name: `Tobias Johansson`,
-      summary: `som är en utvecklare i Stockholm`,
+      summary: `som är en utvecklare i Stockholm!`,
     },
     description: `Detta är min blogg där jag utforskar ämnen jag tycker är intressanta, oftast inom teknik.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
