@@ -58,7 +58,9 @@ const Bio = () => {
         }}
       />
       <p style={{ margin: 0 }}>
-        En blogg av <strong>{author.name}</strong> {author.summary}
+        Blogg av <strong>{author.name}</strong>
+        <br />
+        {author.summary}
       </p>
     </div>
   )

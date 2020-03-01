@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Svammel`,
     author: {
-      name: `Tobias Johansson`,
-      summary: `som är en utvecklare i Stockholm!`,
+      name: `Tobias Johansson.`,
+      summary: `Utforskar tekniska koncept och verktyg för att lära mig.`,
     },
     description: `Detta är min blogg där jag utforskar ämnen jag tycker är intressanta, oftast inom teknik.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -78,6 +78,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
