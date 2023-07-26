@@ -1,16 +1,35 @@
-# Settings in the [build] context are global and are applied to
-# all contexts unless otherwise overridden by more specific contexts.
-
 [build]
-base = "/"
-command = "hugo --gc"
+command = "hugo --gc --minify"
 publish = "public"
 
-[build.environment]
-HUGO_THEME = "repo"
-HUGO_VERSION = "0.110.0"
+[context.production.environment]
+HUGO_ENABLEGITINFO = "true"
+HUGO_ENV = "production"
+HUGO_VERSION = "0.115.4"
 
-# Deploy Preview context: all deploys generated from
-# a pull/merge request will inherit these settings.
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_ENV = "production"
+HUGO_VERSION = "0.115.4"
+
 [context.deploy-preview]
-command = "hugo --gc -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.115.4"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.115.4"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+
+# [[redirects]]
+# from = "/npmjs/*"
+# status = 200
+# to = "/npmjs/"
