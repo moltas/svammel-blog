@@ -52,14 +52,14 @@ url = '/about/'
 weight = 30
 
 [params]
-defaultColor = "dark" # set color mode: dark, light, auto
-sitename = "Awesome hugo blog" 
+defaultColor = "auto" # set color mode: dark, light, auto
+sitename = "Svammel" 
 # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
 # the default value is set to 'auto'.
 # You can take a look at layouts/index.html for more information.
 additionalScripts = ['js/custom.js', 'js/custom-2.js'] 
 description = "Minimal Hugo blog theme with light and dark mode support" 
-goToTop = true # set to false to disable 'go to top' button
+goToTop = false # set to false to disable 'go to top' button
 mainSections = ['posts'] 
 toc = true # set to false to disable table of contents 'globally'
 # Will try to load 'assets/js/custom.js' and 'assets/js/custom-2.js'.
@@ -71,8 +71,8 @@ toc = true # set to false to disable table of contents 'globally'
 avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
 # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
 description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog"
-intro = "Awesome hugo blog"
-name = "Sidharth R"
+intro = "Rambling about tech and things of interest"
+name = "Tobias Johansson"
 
 # Allow to override webmanifest options
 [params.webmanifest]
