@@ -4,7 +4,7 @@ date: 2023-07-26T16:59:49+02:00
 draft: true
 ---
 
-Emoji can be enabled in a Hugo project in a number of ways.
+Emoji can be enabled in a Hugo project in a number of ways..
 
 <!--more-->
 
