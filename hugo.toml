@@ -41,11 +41,6 @@ pageRef = "/"
 url = '/'
 weight = 10
 [[menu.main]]
-name = 'Posts'
-pageRef = "posts"
-url = '/posts/'
-weight = 20
-[[menu.main]]
 name = 'About'
 pageRef = "about"
 url = '/about/'
@@ -68,10 +63,10 @@ toc = true # set to false to disable table of contents 'globally'
 # The file `custom.js` is loaded on each page (before body tag ends).
 
 [params.author]
-avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+avatar = "me.jpeg" # put the file in assets folder; also ensure that image has same height and width
 # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog"
-intro = "Rambling about tech and things of interest"
+description = "This is a place for rambling and digging deeper into topics that interest me."
+intro = "Hi, I'm Tobias and this is my blog"
 name = "Tobias Johansson"
 
 # Allow to override webmanifest options
@@ -89,7 +84,7 @@ TileColor = "#2d89ef" # default windows 10 blue tile color
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/hugo-sid"
+url = "https://github.com/moltas"
 
 [[params.socialIcons]]
 name = "twitter"
